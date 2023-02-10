@@ -4,9 +4,9 @@ const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-// const JWT_SECRET = "Animeshisagoodb$oy";
+
 const { JWT_SECRET } = require("../config/keys");
-const JWT_SECRET = require("../config/keys");
+
 const fetchuser = require("../middleware/fetchuser");
 //Create a user
 router.post(
